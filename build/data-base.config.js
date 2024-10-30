@@ -6,9 +6,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
 require("dotenv/config");
 // URL de conexión a MongoDB
-const url = `mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_DATABASE}`;
+//const url = `mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_DATABASE}`;
 // Conectar a la base de datos
-mongoose_1.default.connect(url)
+mongoose_1.default.connect(process.env.URL)
     .then(() => {
     console.log('Conexión establecida con MongoDB');
 })
