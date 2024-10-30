@@ -1,0 +1,1 @@
+{"version":3,"file":"paciente.scheme.js","sourceRoot":"","sources":["../../src/schemes/paciente.scheme.ts"],"names":[],"mappings":";;;;;AAAA,kCAAkC;AAClC,wDAAgC;AAChC,sEAAuC;AAGvC,MAAM,OAAO,GAAG,IAAI,kBAAQ,CAAC,MAAM,CAAC;IAChC,UAAU,EAAE,MAAM,EAAE,gCAAgC;CACrD,CAAC,CAAC;AAEH,6CAA6C;AAC/C,MAAM,aAAa,GAAG,wBAAO,CAAC,aAAa,CAAW,UAAU,EAAE,OAAO,CAAC,CAAC;AAE3E,kBAAe,aAAa,CAAC"}
