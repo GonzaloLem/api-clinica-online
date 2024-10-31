@@ -28,16 +28,14 @@ const PUERTO = process.env.PORT??3005;
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: `http://localhost:${4200}`,
-    //origin: `https://angular-clinica-online.web.app`,
+    origin: ['http://localhost:4200', 'https://angular-clinica-online.web.app'],
     methods: ['GET', 'POST']
   }
 });
 
-app.use(cors());
+
 app.use(cors({
- origin: 'http://localhost:4200',
-  //origin: 'https://angular-clinica-online.web.app',
+  origin: ['http://localhost:4200', 'https://angular-clinica-online.web.app'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
