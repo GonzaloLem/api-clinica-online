@@ -23,16 +23,16 @@ const server = (0, node_http_1.createServer)(app);
 exports.server = server;
 const io = new socket_io_1.Server(server, {
     cors: {
-        //origin: `http://localhost:${4200}`,
-        origin: `https://angular-clinica-online.web.app`,
+        origin: `http://localhost:${4200}`,
+        //origin: `https://angular-clinica-online.web.app`,
         methods: ['GET', 'POST']
     }
 });
 exports.io = io;
 app.use((0, cors_1.default)());
 app.use((0, cors_1.default)({
-    // origin: 'http://localhost:4200',
-    origin: 'https://angular-clinica-online.web.app',
+    origin: 'http://localhost:4200',
+    //origin: 'https://angular-clinica-online.web.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
